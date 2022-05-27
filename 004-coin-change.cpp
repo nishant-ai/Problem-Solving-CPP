@@ -5,13 +5,13 @@ int dp[10010];
 
 int bruteForce(vector<int>&coins, int amount){ // Recursion
     int ans = INT_MAX;
-    if (dp[amount]!=-1) return dp[amount];
+    if (dp[amount]!=-1) return dp[amount]; // DP use
     if (amount==0) return 0;
     for (int coin: coins){
         if (amount-coin >= 0)
         ans = min(bruteForce(coins, amount-coin) + 1LL, ans + 0LL);
     }
-    return dp[amount] = ans;
+    return dp[amount] = ans; // DP use
 }
 
 int coinChange(vector<int>&coins, int amount){
