@@ -6,7 +6,7 @@ int h[N] = {10, 30, 40, 20};
 int dp[N];
 int k;
 
-// bruteforce recursion - Exponential TC
+// bruteforce recursion - Exponential Time Complexity
 /*
 int frog(int i){
     if (i==0) return 0;
@@ -22,8 +22,12 @@ int frog(int i){
 }
 */
 
-// DP approach - memoisation -FROG I
 /*
+FROG I Question:
+https://atcoder.jp/contests/dp/tasks/dp_a
+*/
+
+// DP approach - memoisation - FROG I
 int frog(int i){
     if (i==0) return 0;
     if (dp[i]!=-1) return dp[i];
@@ -37,6 +41,10 @@ int frog(int i){
 
     return dp[i] = cost;
 }
+
+/*
+Frog II Question:
+https://atcoder.jp/contests/dp/tasks/dp_b
 */
 
 // DP approach - FROG II
