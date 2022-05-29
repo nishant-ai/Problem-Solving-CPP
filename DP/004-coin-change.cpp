@@ -1,6 +1,7 @@
 // Question: https://leetcode.com/problems/coin-change/
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int dp[10010];
