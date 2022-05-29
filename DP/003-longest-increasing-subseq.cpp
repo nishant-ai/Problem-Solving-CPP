@@ -1,5 +1,6 @@
 // Question: https://leetcode.com/problems/longest-increasing-subsequence/
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 

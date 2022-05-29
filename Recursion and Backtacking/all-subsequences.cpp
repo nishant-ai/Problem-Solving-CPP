@@ -1,34 +1,29 @@
-#include <iostream>
-#include <vector>
+#include "/Users/nishant/bits/stdc++.h"
 using namespace std;
 
-void subseq(int idx, vector<int> ar, vector <vector<int> > &result, int n){
-    vector <int> temp;
+void subseq(int idx, vector<int>&arr, vector<int> &result, int n){
     if (idx==n){
-        result.push_back(temp);
+        for (auto i: result) cout << i << " ";
+        if (result.size()==0) cout << "{}" << endl;
+        cout << endl;
         return;
     }
     // take it
-    temp.push_back(ar[idx]);
-    subseq(idx+1, ar, result, n);
+    result.push_back(arr[idx]);
+    subseq(idx+1, arr, result, n);
     // Not take it
-    temp.pop_back();
-    subseq(idx+1, ar, result, n);
+    result.pop_back();
+    subseq(idx+1, arr, result, n);
 }
 
 int main(){
-    vector<int> ar;
-    vector <vector<int> > result;
+    vector<int> ar{3,1,2};
+    vector <int> result;
+
     int idx=0;
-    int n=ar.size()-1;
+    int n=3;
 
     subseq(idx, ar, result, n);
 
-    for (auto i: result){
-        cout << "[ ";
-        for (auto j: i)
-            cout << j << " ";
-        cout << " ]" << endl;
-    }
     return 0;
 }
