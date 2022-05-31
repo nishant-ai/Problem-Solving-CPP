@@ -1,6 +1,6 @@
 // #include <iostream>
 // #include <cmath>
-#include <bits/stdc++.h>
+#include "/Users/nishant/bits/stdc++.h"
 using namespace std;
 
 bool tests(int* q, int c, int n){ //okay function
