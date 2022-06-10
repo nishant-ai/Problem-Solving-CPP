@@ -13,7 +13,7 @@ int main(){
   for (i = 0; i < 5; i++)
     for (j = 0; j < 7; j++){
       wb[i][j] = " ";
-      bb[i][j] = "◼️";
+      bb[i][j] = "█";
     }
 
   for (i = 0; i < 8; i++)
