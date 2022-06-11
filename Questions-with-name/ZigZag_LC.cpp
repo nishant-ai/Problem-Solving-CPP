@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/zigzag-conversion/
 
-#include <iostream>
+#include "/Users/nishant/bits/stdc++.h"
 using namespace std;
 
 // MyOwn Soln
