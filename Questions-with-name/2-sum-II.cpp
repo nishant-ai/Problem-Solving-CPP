@@ -1,4 +1,7 @@
 // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+#include "/Users/nishant/bits/stdc++.h"
+using namespace std;
+
 
 class Solution {
 public:
