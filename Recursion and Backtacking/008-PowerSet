@@ -1,0 +1,24 @@
+// https://leetcode.com/problems/subsets/
+
+#include "/Users/nishant/bits/stdc++.h"
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> ans;
+    
+    void create(vector<int>& nums, int idx, vector<int>&temp){
+        ans.push_back(temp);
+        for (int i=idx; i<nums.size(); i++){
+            temp.push_back(nums[i]);
+            create(nums, i+1, temp);
+            temp.pop_back();
+        }
+    }
+    
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<int> temp;
+        create(nums, 0, temp);
+        return ans;
+    }
+};
