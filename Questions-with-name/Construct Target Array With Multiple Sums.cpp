@@ -1,20 +1,21 @@
-class Solution
-{
+// https://leetcode.com/problems/construct-target-array-with-multiple-sums/
+
+#include "/Users/nishant/bits/stdc++.h"
+using namespace std;
+
+class Solution{
 public:
-    bool isPossible(vector<int> &target)
-    {
+    bool isPossible(vector<int> &target){
 
         priority_queue<int> pq;
         long long sum = 0;
 
-        for (auto num : target)
-        {
+        for (auto num : target){
             pq.push(num);
             sum += num;
         }
 
-        while (pq.top() != 1)
-        {
+        while (pq.top() != 1){
 
             sum -= pq.top();
 
